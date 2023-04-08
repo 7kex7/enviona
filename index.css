@@ -396,7 +396,7 @@ html, body {
     align-items: center;
     width: 100%;
     margin-top: 50px;
-    height: 200px;
+    height: 80%;
     background-color: #e6f5ff;
     color: #257db3;
     border-top: 1px solid #4aaae5;
@@ -409,6 +409,62 @@ html, body {
     font-size: 16px;
     margin-bottom: 5px;
 }
+.contact__us {
+    padding: 44px;
+    border-radius: 15px;
+    margin: 18px;
+    color: #fff;
+    background-color: #0b448c;
+    display: flex;
+    flex-direction: column;
+}
+.contact__title {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.row1, .row2 {
+    display: flex;
+    margin-bottom: 18px;
+}
+.name, .surname, .email {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.check {
+    display: flex;
+    align-items: center;
+} .check label {
+    margin-right: 5px;
+} .check input[type="checkbox"] {
+    accent-color: yellow;
+}
+.name label, .surname label, .email label { margin-bottom: 5px }
+.contact__us input[type="text"], input[type="email"] {
+    width: 200px;
+    height: 32px;
+    padding: 5px;
+    padding-left: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.contact__button {
+    width: 100%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+}.contact__button button {
+    padding: 5px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    transition: 0.2s;
+}.contact__button button:hover {
+    background-color: yellow;
+    color: #0b448c;
+}
+
 .footer__table {
     display: flex;
     margin: 40px 0 20px 0;
@@ -425,10 +481,13 @@ html, body {
 .footer__col {
     display: flex;
     flex-direction: column;
-    margin: 0 15px;
+    margin: 15px 15px;
 }
 .footer__link {
     color: #4aaae5;
+}
+.footer__link:hover {
+    text-decoration: none;
 }
 
 @media (max-width: 874px) {
@@ -485,7 +544,12 @@ html, body {
     }
     .footer {
         width: 100%;
-        height: 100%;
+        height: 50%;
     }
-
+    .footer__col {
+        margin: 15px 0;
+    }
+    .contact__us {
+        display: none;
+    }
 }
